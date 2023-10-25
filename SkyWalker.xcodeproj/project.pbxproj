@@ -10,8 +10,8 @@
 		77E71CF22AE9A84600C0D166 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CF12AE9A84600C0D166 /* CustomVideoPlayer.swift */; };
 		77E71CF62AE9AA4700C0D166 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CF52AE9AA4700C0D166 /* HomeView.swift */; };
 		77E71CFF2AE9B2B600C0D166 /* HikeBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CFE2AE9B2B600C0D166 /* HikeBadgeView.swift */; };
-		77E71D012AE9BF3400C0D166 /* output2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 77E71D002AE9BF3400C0D166 /* output2.mov */; };
 		77E71D032AE9C00F00C0D166 /* VT323-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77E71D022AE9C00F00C0D166 /* VT323-Regular.ttf */; };
+		77E71D052AE9C22E00C0D166 /* output2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 77E71D042AE9C22E00C0D166 /* output2.mov */; };
 		DA12E8942AE9BB020049624C /* ConcentrationTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA12E8932AE9BB020049624C /* ConcentrationTimerView.swift */; };
 		DA1E9B882AE8706C003C3963 /* SkyWalkerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E9B872AE8706C003C3963 /* SkyWalkerApp.swift */; };
 		DA1E9B8A2AE8706C003C3963 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E9B892AE8706C003C3963 /* ContentView.swift */; };
@@ -23,8 +23,8 @@
 		77E71CF12AE9A84600C0D166 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
 		77E71CF52AE9AA4700C0D166 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		77E71CFE2AE9B2B600C0D166 /* HikeBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeBadgeView.swift; sourceTree = "<group>"; };
-		77E71D002AE9BF3400C0D166 /* output2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = output2.mov; path = ../../../../../Downloads/output2.mov; sourceTree = "<group>"; };
 		77E71D022AE9C00F00C0D166 /* VT323-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VT323-Regular.ttf"; sourceTree = "<group>"; };
+		77E71D042AE9C22E00C0D166 /* output2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = output2.mov; sourceTree = "<group>"; };
 		DA12E8932AE9BB020049624C /* ConcentrationTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationTimerView.swift; sourceTree = "<group>"; };
 		DA12E8972AE9BCE20049624C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DA1E9B842AE8706C003C3963 /* SkyWalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyWalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,8 +60,8 @@
 		DA12E8982AE9BE930049624C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				77E71D042AE9C22E00C0D166 /* output2.mov */,
 				77E71D022AE9C00F00C0D166 /* VT323-Regular.ttf */,
-				77E71D002AE9BF3400C0D166 /* output2.mov */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -162,8 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA1E9B8F2AE8706D003C3963 /* Preview Assets.xcassets in Resources */,
-				77E71D012AE9BF3400C0D166 /* output2.mov in Resources */,
 				77E71D032AE9C00F00C0D166 /* VT323-Regular.ttf in Resources */,
+				77E71D052AE9C22E00C0D166 /* output2.mov in Resources */,
 				DA1E9B8C2AE8706D003C3963 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
