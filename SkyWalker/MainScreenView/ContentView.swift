@@ -20,7 +20,7 @@ struct ContentView: View {
                     Text("sky walker")
                         .foregroundColor(.white)
                         .background(Color.black)
-                        .font(.title)
+                        .font(Font.custom("VT323-Regular", size: 35))
 
                     Text("A journey of a thousand miles begins with a single step")
                         .foregroundColor(.white)
