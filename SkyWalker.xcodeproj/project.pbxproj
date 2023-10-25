@@ -25,6 +25,7 @@
 		DA12E8932AE9BB020049624C /* ConcentrationTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationTimerView.swift; sourceTree = "<group>"; };
 		DA12E8952AE9BBF30049624C /* VT323-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "VT323-Regular.ttf"; path = "../../../Downloads/skywalker v2/skywalker v2/VT323-Regular.ttf"; sourceTree = "<group>"; };
 		DA12E8972AE9BCE20049624C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DA12E8992AE9BE9F0049624C /* VT323-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VT323-Regular.ttf"; sourceTree = "<group>"; };
 		DA1E9B842AE8706C003C3963 /* SkyWalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyWalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1E9B872AE8706C003C3963 /* SkyWalkerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyWalkerApp.swift; sourceTree = "<group>"; };
 		DA1E9B892AE8706C003C3963 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +56,14 @@
 			path = MainScreenView;
 			sourceTree = "<group>";
 		};
+		DA12E8982AE9BE930049624C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA12E8992AE9BE9F0049624C /* VT323-Regular.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		DA1E9B7B2AE8706C003C3963 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +85,7 @@
 			children = (
 				DA12E8972AE9BCE20049624C /* Info.plist */,
 				DA12E8952AE9BBF30049624C /* VT323-Regular.ttf */,
+				DA12E8982AE9BE930049624C /* Resources */,
 				DA1E9B872AE8706C003C3963 /* SkyWalkerApp.swift */,
 				77E71CE52AE90C7D00C0D166 /* MainScreenView */,
 				DA1E9B8B2AE8706D003C3963 /* Assets.xcassets */,
