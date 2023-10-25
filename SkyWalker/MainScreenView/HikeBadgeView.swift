@@ -25,8 +25,10 @@ struct HikeBadgeView: View {
     }
 }
 
-struct MainScreenView_Previews: PreviewProvider {
+struct HikeBadgeView_Previews: PreviewProvider {
+
     static var previews: some View {
-        ContentView()
+        HikeBadgeView(name: "Badge")
     }
+
 }

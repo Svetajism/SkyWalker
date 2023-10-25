@@ -18,14 +18,14 @@ struct ContentView: View {
 
                 VStack(spacing: 20) {
                     Text("sky walker")
+                        .font(Font.custom("VT323-Regular", size: 35))
                         .foregroundColor(.white)
                         .background(Color.black)
-                        .font(Font.custom("VT323-Regular", size: 35))
 
                     Text("A journey of a thousand miles begins with a single step")
                         .foregroundColor(.white)
                         .background(Color.black)
-                        .font(.title3)
+                        .font(Font.custom("VT323-Regular", size: 35))
                 }
                 .padding()
             }
