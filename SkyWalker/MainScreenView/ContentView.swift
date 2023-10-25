@@ -6,21 +6,22 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct ContentView: View {
-
+    
     var body: some View {
+    
             ZStack {
-                VideoPlayerView()
-                    .edgesIgnoringSafeArea(.all)
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-                
+    
+                Home().ignoresSafeArea()
+
                 VStack(spacing: 20) {
                     Text("sky walker")
                         .foregroundColor(.white)
                         .background(Color.black)
                         .font(.title)
+
                     Text("A journey of a thousand miles begins with a single step")
                         .foregroundColor(.white)
                         .background(Color.black)
@@ -32,8 +33,10 @@ struct ContentView: View {
 
 }
 
-struct MainScreenView_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
+
     static var previews: some View {
         ContentView()
     }
+    
 }

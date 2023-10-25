@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		77E71CE42AE90C7600C0D166 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CE32AE90C7600C0D166 /* LaunchScreenView.swift */; };
-		77E71CE82AE9276B00C0D166 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CE72AE9276B00C0D166 /* VideoPlayerView.swift */; };
+		77E71CF22AE9A84600C0D166 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CF12AE9A84600C0D166 /* CustomVideoPlayer.swift */; };
+		77E71CF62AE9AA4700C0D166 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CF52AE9AA4700C0D166 /* HomeView.swift */; };
+		77E71CFD2AE9B0DC00C0D166 /* output2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 77E71CFC2AE9B0DC00C0D166 /* output2.mov */; };
+		77E71CFF2AE9B2B600C0D166 /* HikeBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CFE2AE9B2B600C0D166 /* HikeBadgeView.swift */; };
 		DA1E9B882AE8706C003C3963 /* SkyWalkerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E9B872AE8706C003C3963 /* SkyWalkerApp.swift */; };
 		DA1E9B8A2AE8706C003C3963 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E9B892AE8706C003C3963 /* ContentView.swift */; };
 		DA1E9B8C2AE8706D003C3963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1E9B8B2AE8706D003C3963 /* Assets.xcassets */; };
@@ -16,8 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		77E71CE32AE90C7600C0D166 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
-		77E71CE72AE9276B00C0D166 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		77E71CF12AE9A84600C0D166 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
+		77E71CF52AE9AA4700C0D166 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		77E71CFC2AE9B0DC00C0D166 /* output2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = output2.mov; path = ../../../../Downloads/output2.mov; sourceTree = "<group>"; };
+		77E71CFE2AE9B2B600C0D166 /* HikeBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeBadgeView.swift; sourceTree = "<group>"; };
 		DA1E9B842AE8706C003C3963 /* SkyWalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyWalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1E9B872AE8706C003C3963 /* SkyWalkerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyWalkerApp.swift; sourceTree = "<group>"; };
 		DA1E9B892AE8706C003C3963 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,19 +40,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		77E71CE22AE90C5800C0D166 /* LaunchScreenView */ = {
-			isa = PBXGroup;
-			children = (
-				77E71CE32AE90C7600C0D166 /* LaunchScreenView.swift */,
-			);
-			path = LaunchScreenView;
-			sourceTree = "<group>";
-		};
 		77E71CE52AE90C7D00C0D166 /* MainScreenView */ = {
 			isa = PBXGroup;
 			children = (
-				77E71CE72AE9276B00C0D166 /* VideoPlayerView.swift */,
+				77E71CF12AE9A84600C0D166 /* CustomVideoPlayer.swift */,
 				DA1E9B892AE8706C003C3963 /* ContentView.swift */,
+				77E71CF52AE9AA4700C0D166 /* HomeView.swift */,
+				77E71CFE2AE9B2B600C0D166 /* HikeBadgeView.swift */,
 			);
 			path = MainScreenView;
 			sourceTree = "<group>";
@@ -80,10 +78,10 @@
 			isa = PBXGroup;
 			children = (
 				DA1E9B872AE8706C003C3963 /* SkyWalkerApp.swift */,
-				77E71CE22AE90C5800C0D166 /* LaunchScreenView */,
 				77E71CE52AE90C7D00C0D166 /* MainScreenView */,
 				77E71CE62AE91B9300C0D166 /* TimerScreenView */,
 				DA1E9B8B2AE8706D003C3963 /* Assets.xcassets */,
+				77E71CFC2AE9B0DC00C0D166 /* output2.mov */,
 				DA1E9B8D2AE8706D003C3963 /* Preview Content */,
 			);
 			path = SkyWalker;
@@ -157,6 +155,7 @@
 			files = (
 				DA1E9B8F2AE8706D003C3963 /* Preview Assets.xcassets in Resources */,
 				DA1E9B8C2AE8706D003C3963 /* Assets.xcassets in Resources */,
+				77E71CFD2AE9B0DC00C0D166 /* output2.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,10 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E71CF62AE9AA4700C0D166 /* HomeView.swift in Sources */,
 				DA1E9B8A2AE8706C003C3963 /* ContentView.swift in Sources */,
 				DA1E9B882AE8706C003C3963 /* SkyWalkerApp.swift in Sources */,
-				77E71CE42AE90C7600C0D166 /* LaunchScreenView.swift in Sources */,
-				77E71CE82AE9276B00C0D166 /* VideoPlayerView.swift in Sources */,
+				77E71CF22AE9A84600C0D166 /* CustomVideoPlayer.swift in Sources */,
+				77E71CFF2AE9B2B600C0D166 /* HikeBadgeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +313,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -345,7 +345,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
