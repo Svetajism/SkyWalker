@@ -16,6 +16,8 @@ struct TimerView: View {
     @State private var isBreakTimerRunning: Bool = false
     @State private var breakTimeRemaining: Int = 5 * 60 // 5 minutes in seconds
     @State private var showSkipAlert: Bool = false
+    @State private var showAlert: Bool = false
+
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -25,6 +27,9 @@ struct TimerView: View {
             ZStack {
                 Color.black.edgesIgnoringSafeArea(.all) // Black background
                 
+                if isRunning {
+                    Home().ignoresSafeArea()
+                }
                 VStack {
                     if !isRunning && !isPaused && !isBreakTimerRunning {
                         HStack {
@@ -37,7 +42,8 @@ struct TimerView: View {
                         .frame(height: 50)
                         
                         if isBreakTime {
-                            Text("It's break time, buddy!")
+                            Text("It's break time \nbuddy!")
+                                .multilineTextAlignment(.center)
                                 .font(Font.custom("VT323-Regular", size: 35))
                                 .foregroundColor(.white)
                                 .padding(.top, 20)
@@ -89,22 +95,22 @@ struct TimerView: View {
 
                             // Start Button
                             Button(action: {
-                                        isBreakTimerRunning.toggle() // Toggle between start and pause
-                                    }) {
-                                        HStack {
-                                            Image(systemName: isBreakTimerRunning ? "pause.fill" : "play.fill")
-                                                .foregroundColor(.black)
-                                            Text(isBreakTimerRunning ? "Pause" : "Start")
-                                                .foregroundColor(.black)
-                                        }
-                                        .padding(.horizontal, 50)
-                                        .padding(.vertical, 15)
-                                    }
-                                    .background(Color(hex: "FF630F"))
-                                    .cornerRadius(15)
+                                isBreakTimerRunning.toggle() // Toggle between start and pause
+                            }) {
+                                HStack {
+                                    Image(systemName: isBreakTimerRunning ? "pause.fill" : "play.fill")
+                                        .foregroundColor(.black)
+                                    Text(isBreakTimerRunning ? "Pause" : "Start")
+                                        .foregroundColor(.black)
                                 }
-                                .padding(.bottom, 50)
+                                .padding(.horizontal, 50)
+                                .padding(.vertical, 15)
                             }
+                            .background(Color(hex: "FF630F"))
+                            .cornerRadius(15)
+                        }
+                        .padding(.bottom, 50)
+                    }
                     
                     if isPaused { // Show Quit and Resume buttons when paused
                         HStack(spacing: 20) {
@@ -122,7 +128,7 @@ struct TimerView: View {
                                 .padding(.vertical, 15)
                             }
                             .background(RoundedRectangle(cornerRadius: 15).stroke(Color.white, lineWidth: 2))
-
+                            
                             // Resume Button
                             Button(action: {
                                 isPaused = false
@@ -141,11 +147,11 @@ struct TimerView: View {
                             .cornerRadius(15)
                         }
                         .padding(.bottom, 50)
-
+                        
                         
                     }
                     
-
+                    
                     else {
                         if !isBreakTime {
                             
@@ -173,12 +179,19 @@ struct TimerView: View {
                             .padding(.bottom, 50)
                         }
                     }
-
+                    
                 }
             }
             .navigationBarTitle("CONCENTRATION TIMER", displayMode: .inline)
             .navigationBarHidden(true)
+            
+            
+
+            
         }
+        
+        
+        
         
         .onReceive(timer) { _ in
             if isRunning && timeRemaining > 0 {
@@ -186,6 +199,7 @@ struct TimerView: View {
             }
 
             if timeRemaining == 0 && !isBreakTime {
+                showAlert = true
                 isRunning = false
                 isBreakTime = true
             }
@@ -195,9 +209,7 @@ struct TimerView: View {
             }
         }
 
-
     }
-
 }
 
 struct BackButton: View {
