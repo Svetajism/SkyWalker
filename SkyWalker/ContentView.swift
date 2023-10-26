@@ -11,24 +11,27 @@ import AVKit
 struct ContentView: View {
     
     var body: some View {
-        NavigationView  {
-            NavigationLink(destination: PlanetsView()) {
-                ZStack {
-                    
-                    Home().ignoresSafeArea()
-                    
-                    VStack(spacing: 20) {
-                        Text("SKY WALKER")
-                            .font(Font.custom("VT323-Regular", size: 40))
-                            .foregroundColor(.white)
-                            .background(Color.black)
+        GeometryReader{ screen in
+            NavigationView  {
+                NavigationLink(destination: PlanetsView()) {
+                    ZStack {
                         
-                        Text("A journey of a thousand miles begins with a single step")
-                            .foregroundColor(.white)
-                            .background(Color.black)
-                            .font(Font.custom("VT323-Regular", size: 35))
+                        Home().ignoresSafeArea()
+                        
+                        VStack(spacing: 20) {
+                            Text("SKY WALKER")
+                                .font(Font.custom("VT323-Regular", size: 40))
+                                .foregroundColor(.white)
+                                .background(Color.black)
+                            
+                            Text("A journey of a thousand miles begins with a single step")
+                                .foregroundColor(.white)
+                                .background(Color.black)
+                                .font(Font.custom("VT323-Regular", size: 35))
+                        }
+                        .frame(width: screen.size.width)
+                        .padding()
                     }
-                    .padding()
                 }
             }
         }
