@@ -14,9 +14,6 @@ struct SkyWalkerApp: App {
 
         WindowGroup {
             ContentView()
-            Color.black // Set the background color for the entire screen
-                        .ignoresSafeArea()
-//            TimerView()
         }
 
     }

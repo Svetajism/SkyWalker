@@ -13,22 +13,24 @@ struct PlanetsView: View {
     let viewModel = PlanetsViewModel()
     
     var body: some View {
-        
-        ScrollView(.vertical) {
+        ZStack{
+            Color.black
+                .ignoresSafeArea()
             
-            Text("MY JOURNEY")
-                .font(Font.custom("VT323-Regular", size: 40))
-                .foregroundColor(.white)
-                .background(Color.black)
-            
-            VStack {
-                ForEach(viewModel.planets) { planet in
-                    PlanetCardView(model: planet)
+            ScrollView(.vertical) {
+                
+                Text("MY JOURNEY")
+                    .font(Font.custom("VT323-Regular", size: 40))
+                    .foregroundColor(.white)
+                
+                VStack {
+                    ForEach(viewModel.planets) { planet in
+                        PlanetCardView(model: planet)
+                    }
                 }
+                
             }
-
         }
-        .background(.black)
     }
 }
 
