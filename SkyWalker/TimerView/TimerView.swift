@@ -100,7 +100,7 @@ struct TimerView: View {
                                         .padding(.horizontal, 50)
                                         .padding(.vertical, 15)
                                     }
-                                    .background(Color.black)
+                                    .background(Color(hex: "FF630F"))
                                     .cornerRadius(15)
                                 }
                                 .padding(.bottom, 50)
@@ -137,7 +137,7 @@ struct TimerView: View {
                                 .padding(.horizontal, 50)
                                 .padding(.vertical, 15)
                             }
-                            .background(Color.black)
+                            .background(Color(hex: "FF630F"))
                             .cornerRadius(15)
                         }
                         .padding(.bottom, 50)
@@ -164,11 +164,11 @@ struct TimerView: View {
                             }
                             .padding(.horizontal, 150)
                             .padding(.vertical, 15)
-                            .background(isRunning ? Color.clear : Color.black)
+                            .background(isRunning ? Color.clear : Color(hex: "FF630F"))
                             .cornerRadius(15)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 15)
-                                    .stroke(isRunning ? Color.white : Color.black, lineWidth: isRunning ? 2 : 0) // Add stroke for transparent button
+                                    .stroke(isRunning ? Color.white : Color(hex: "FF630F"), lineWidth: isRunning ? 2 : 0) // Add stroke for transparent button
                             )
                             .padding(.bottom, 50)
                         }
@@ -206,7 +206,7 @@ struct BackButton: View {
             Image(systemName: "chevron.left")
             Text("Back")
         }
-        .foregroundColor(Color.black)
+        .foregroundColor(Color(hex: "FF630F"))
         .onTapGesture {
             // Action for back button here
         }
@@ -216,7 +216,7 @@ struct BackButton: View {
 struct SettingsButton: View {
     var body: some View {
         Image(systemName: "person.circle.fill")
-            .foregroundColor(Color.black)
+            .foregroundColor(Color(hex: "FF630F"))
             .onTapGesture {
                 // Action for settings button here
             }

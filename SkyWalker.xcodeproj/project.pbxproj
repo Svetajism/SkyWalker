@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		545AB77E2AEAC8B100FD074D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545AB77D2AEAC8B100FD074D /* Color.swift */; };
 		77E71CF22AE9A84600C0D166 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CF12AE9A84600C0D166 /* CustomVideoPlayer.swift */; };
 		77E71CF62AE9AA4700C0D166 /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CF52AE9AA4700C0D166 /* HelloView.swift */; };
 		77E71CFF2AE9B2B600C0D166 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CFE2AE9B2B600C0D166 /* BadgeView.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		545AB77D2AEAC8B100FD074D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		54AC9C2C2AEA948000106640 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		77E71CF12AE9A84600C0D166 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
 		77E71CF52AE9AA4700C0D166 /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				DA12E8932AE9BB020049624C /* TimerView.swift */,
+				545AB77D2AEAC8B100FD074D /* Color.swift */,
 			);
 			path = TimerView;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				DA12E89C2AE9C6A80049624C /* PlanetsView.swift in Sources */,
 				DA12E89F2AE9C9880049624C /* PlanetModel.swift in Sources */,
 				77E71CF62AE9AA4700C0D166 /* HelloView.swift in Sources */,
+				545AB77E2AEAC8B100FD074D /* Color.swift in Sources */,
 				DA1E9B8A2AE8706C003C3963 /* ContentView.swift in Sources */,
 				DA12E8942AE9BB020049624C /* TimerView.swift in Sources */,
 				DA1E9B882AE8706C003C3963 /* SkyWalkerApp.swift in Sources */,
