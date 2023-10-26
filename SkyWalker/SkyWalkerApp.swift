@@ -14,7 +14,7 @@ struct SkyWalkerApp: App {
 
         WindowGroup {
             ContentView()
-//            ConcentrationTimerView()
+//            TimerView()
         }
 
     }

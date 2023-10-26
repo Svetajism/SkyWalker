@@ -2,12 +2,10 @@
 //  HikeBadgeView.swift
 //  SkyWalker
 //
-//  Created by Svetlana Shardakova on 25/10/23.
-//
 
 import SwiftUI
 
-struct HikeBadgeView: View {
+struct BadgeView: View {
 
     var name: String
 
@@ -28,7 +26,7 @@ struct HikeBadgeView: View {
 struct HikeBadgeView_Previews: PreviewProvider {
 
     static var previews: some View {
-        HikeBadgeView(name: "Badge")
+        BadgeView(name: "Badge")
     }
 
 }

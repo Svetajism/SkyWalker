@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		77E71CF22AE9A84600C0D166 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CF12AE9A84600C0D166 /* CustomVideoPlayer.swift */; };
-		77E71CF62AE9AA4700C0D166 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CF52AE9AA4700C0D166 /* HomeView.swift */; };
-		77E71CFF2AE9B2B600C0D166 /* HikeBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CFE2AE9B2B600C0D166 /* HikeBadgeView.swift */; };
+		77E71CF62AE9AA4700C0D166 /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CF52AE9AA4700C0D166 /* HelloView.swift */; };
+		77E71CFF2AE9B2B600C0D166 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CFE2AE9B2B600C0D166 /* BadgeView.swift */; };
 		77E71D032AE9C00F00C0D166 /* VT323-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77E71D022AE9C00F00C0D166 /* VT323-Regular.ttf */; };
 		77E71D052AE9C22E00C0D166 /* output2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 77E71D042AE9C22E00C0D166 /* output2.mov */; };
-		DA12E8942AE9BB020049624C /* ConcentrationTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA12E8932AE9BB020049624C /* ConcentrationTimerView.swift */; };
+		DA12E8942AE9BB020049624C /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA12E8932AE9BB020049624C /* TimerView.swift */; };
+		DA12E89C2AE9C6A80049624C /* PlanetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA12E89B2AE9C6A80049624C /* PlanetsView.swift */; };
+		DA12E89F2AE9C9880049624C /* PlanetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA12E89E2AE9C9880049624C /* PlanetModel.swift */; };
+		DA12E8A12AE9C99B0049624C /* PlanetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA12E8A02AE9C99B0049624C /* PlanetsViewModel.swift */; };
 		DA1E9B882AE8706C003C3963 /* SkyWalkerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E9B872AE8706C003C3963 /* SkyWalkerApp.swift */; };
 		DA1E9B8A2AE8706C003C3963 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E9B892AE8706C003C3963 /* ContentView.swift */; };
 		DA1E9B8C2AE8706D003C3963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1E9B8B2AE8706D003C3963 /* Assets.xcassets */; };
@@ -21,12 +24,15 @@
 
 /* Begin PBXFileReference section */
 		77E71CF12AE9A84600C0D166 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
-		77E71CF52AE9AA4700C0D166 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		77E71CFE2AE9B2B600C0D166 /* HikeBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeBadgeView.swift; sourceTree = "<group>"; };
+		77E71CF52AE9AA4700C0D166 /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
+		77E71CFE2AE9B2B600C0D166 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 		77E71D022AE9C00F00C0D166 /* VT323-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VT323-Regular.ttf"; sourceTree = "<group>"; };
 		77E71D042AE9C22E00C0D166 /* output2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = output2.mov; sourceTree = "<group>"; };
-		DA12E8932AE9BB020049624C /* ConcentrationTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationTimerView.swift; sourceTree = "<group>"; };
+		DA12E8932AE9BB020049624C /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		DA12E8972AE9BCE20049624C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DA12E89B2AE9C6A80049624C /* PlanetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsView.swift; sourceTree = "<group>"; };
+		DA12E89E2AE9C9880049624C /* PlanetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetModel.swift; sourceTree = "<group>"; };
+		DA12E8A02AE9C99B0049624C /* PlanetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewModel.swift; sourceTree = "<group>"; };
 		DA1E9B842AE8706C003C3963 /* SkyWalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyWalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1E9B872AE8706C003C3963 /* SkyWalkerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyWalkerApp.swift; sourceTree = "<group>"; };
 		DA1E9B892AE8706C003C3963 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,11 +54,7 @@
 		77E71CE52AE90C7D00C0D166 /* MainScreenView */ = {
 			isa = PBXGroup;
 			children = (
-				77E71CF12AE9A84600C0D166 /* CustomVideoPlayer.swift */,
-				DA12E8932AE9BB020049624C /* ConcentrationTimerView.swift */,
-				DA1E9B892AE8706C003C3963 /* ContentView.swift */,
-				77E71CF52AE9AA4700C0D166 /* HomeView.swift */,
-				77E71CFE2AE9B2B600C0D166 /* HikeBadgeView.swift */,
+				77E71CF52AE9AA4700C0D166 /* HelloView.swift */,
 			);
 			path = MainScreenView;
 			sourceTree = "<group>";
@@ -64,6 +66,40 @@
 				77E71D022AE9C00F00C0D166 /* VT323-Regular.ttf */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DA12E89A2AE9C2D50049624C /* TimerView */ = {
+			isa = PBXGroup;
+			children = (
+				DA12E8932AE9BB020049624C /* TimerView.swift */,
+			);
+			path = TimerView;
+			sourceTree = "<group>";
+		};
+		DA12E89D2AE9C9710049624C /* PlanetsView */ = {
+			isa = PBXGroup;
+			children = (
+				DA12E89B2AE9C6A80049624C /* PlanetsView.swift */,
+				DA12E89E2AE9C9880049624C /* PlanetModel.swift */,
+				DA12E8A02AE9C99B0049624C /* PlanetsViewModel.swift */,
+			);
+			path = PlanetsView;
+			sourceTree = "<group>";
+		};
+		DA12E8A22AE9D8010049624C /* BackgroundView */ = {
+			isa = PBXGroup;
+			children = (
+				77E71CF12AE9A84600C0D166 /* CustomVideoPlayer.swift */,
+			);
+			path = BackgroundView;
+			sourceTree = "<group>";
+		};
+		DA12E8A32AE9D8570049624C /* StatisticsView */ = {
+			isa = PBXGroup;
+			children = (
+				77E71CFE2AE9B2B600C0D166 /* BadgeView.swift */,
+			);
+			path = StatisticsView;
 			sourceTree = "<group>";
 		};
 		DA1E9B7B2AE8706C003C3963 = {
@@ -86,9 +122,14 @@
 			isa = PBXGroup;
 			children = (
 				DA12E8972AE9BCE20049624C /* Info.plist */,
-				DA12E8982AE9BE930049624C /* Resources */,
-				DA1E9B872AE8706C003C3963 /* SkyWalkerApp.swift */,
 				77E71CE52AE90C7D00C0D166 /* MainScreenView */,
+				DA12E89D2AE9C9710049624C /* PlanetsView */,
+				DA12E89A2AE9C2D50049624C /* TimerView */,
+				DA1E9B872AE8706C003C3963 /* SkyWalkerApp.swift */,
+				DA1E9B892AE8706C003C3963 /* ContentView.swift */,
+				DA12E8A32AE9D8570049624C /* StatisticsView */,
+				DA12E8A22AE9D8010049624C /* BackgroundView */,
+				DA12E8982AE9BE930049624C /* Resources */,
 				DA1E9B8B2AE8706D003C3963 /* Assets.xcassets */,
 				DA1E9B8D2AE8706D003C3963 /* Preview Content */,
 			);
@@ -175,12 +216,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77E71CF62AE9AA4700C0D166 /* HomeView.swift in Sources */,
+				DA12E89C2AE9C6A80049624C /* PlanetsView.swift in Sources */,
+				DA12E89F2AE9C9880049624C /* PlanetModel.swift in Sources */,
+				77E71CF62AE9AA4700C0D166 /* HelloView.swift in Sources */,
 				DA1E9B8A2AE8706C003C3963 /* ContentView.swift in Sources */,
-				DA12E8942AE9BB020049624C /* ConcentrationTimerView.swift in Sources */,
+				DA12E8942AE9BB020049624C /* TimerView.swift in Sources */,
 				DA1E9B882AE8706C003C3963 /* SkyWalkerApp.swift in Sources */,
 				77E71CF22AE9A84600C0D166 /* CustomVideoPlayer.swift in Sources */,
-				77E71CFF2AE9B2B600C0D166 /* HikeBadgeView.swift in Sources */,
+				DA12E8A12AE9C99B0049624C /* PlanetsViewModel.swift in Sources */,
+				77E71CFF2AE9B2B600C0D166 /* BadgeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +359,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SkyWalker/Preview Content\"";
-				DEVELOPMENT_TEAM = M9SN9YUYC9;
+				DEVELOPMENT_TEAM = V2LC7G5D42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SkyWalker/Info.plist;
@@ -330,7 +374,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = developer.academy.SkyWalker1;
+				PRODUCT_BUNDLE_IDENTIFIER = developer.academy.SkyWalker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -348,7 +392,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SkyWalker/Preview Content\"";
-				DEVELOPMENT_TEAM = M9SN9YUYC9;
+				DEVELOPMENT_TEAM = V2LC7G5D42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SkyWalker/Info.plist;
@@ -363,7 +407,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = developer.academy.SkyWalker1;
+				PRODUCT_BUNDLE_IDENTIFIER = developer.academy.SkyWalker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;

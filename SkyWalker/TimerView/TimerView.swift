@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct ConcentrationTimerView: View {
-    @State private var timeRemaining: Int = 1 * 60 // 25 minutes in seconds
+struct TimerView: View {
+    
+    @State private var timeRemaining: Int = 25 * 60 // 25 minutes in seconds
     @State private var isRunning: Bool = false
     @State private var isPaused: Bool = false // New State for paused
     @State private var isBreakTime: Bool = false
@@ -19,6 +20,7 @@ struct ConcentrationTimerView: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
+        
         NavigationView {
             ZStack {
                 Color.black.edgesIgnoringSafeArea(.all) // Black background
@@ -41,8 +43,8 @@ struct ConcentrationTimerView: View {
                                 .padding(.top, 20)
                         }
                         else {
-                            Text("Concentration Timer")
-                                .font(Font.custom("VT323-Regular", size: 35))
+                            Text("FOCUS TIMER")
+                                .font(Font.custom("VT323-Regular", size: 40))
                                 .foregroundColor(.white)
                                 .padding(.top, 20)
                         }
@@ -223,6 +225,6 @@ struct SettingsButton: View {
 
 struct ConcentrationTimerView_Previews: PreviewProvider {
     static var previews: some View {
-        ConcentrationTimerView()
+        TimerView()
     }
 }
