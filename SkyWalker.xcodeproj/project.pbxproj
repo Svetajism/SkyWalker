@@ -23,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54AC9C2C2AEA948000106640 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		77E71CF12AE9A84600C0D166 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
 		77E71CF52AE9AA4700C0D166 /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
 		77E71CFE2AE9B2B600C0D166 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
@@ -105,6 +106,7 @@
 		DA1E9B7B2AE8706C003C3963 = {
 			isa = PBXGroup;
 			children = (
+				54AC9C2C2AEA948000106640 /* .gitignore */,
 				DA1E9B862AE8706C003C3963 /* SkyWalker */,
 				DA1E9B852AE8706C003C3963 /* Products */,
 			);
