@@ -16,6 +16,11 @@ struct PlanetsView: View {
         
         ScrollView(.vertical) {
             
+            Text("MY JOURNEY")
+                .font(Font.custom("VT323-Regular", size: 40))
+                .foregroundColor(.white)
+                .background(Color.black)
+            
             VStack {
                 ForEach(viewModel.planets) { planet in
                     PlanetCardView(model: planet)
@@ -39,7 +44,7 @@ struct PlanetCardView: View {
                 .padding(.bottom, 12)
             Text(model.name)
                 .foregroundColor(.white)
-                .padding(.bottom, 24)
+                .padding(.bottom, 48)
             
    
             
