@@ -19,7 +19,7 @@ struct PlanetsView: View {
             
             ScrollView(.vertical) {
                 
-                Text("MY JOURNEY")
+                Text("My journey")
                     .font(Font.custom("VT323-Regular", size: 40))
                     .foregroundColor(.white)
                 
