@@ -45,12 +45,13 @@ struct PlanetCardView: View {
             Image(model.imageName)
                 .padding(.bottom, 12)
             Text(model.name)
+                .font(Font.custom("VT323-Regular", size: 24))
                 .foregroundColor(.white)
                 .padding(.bottom, 48)
             
    
             
-            ForEach(allProgress) { _ in
+            ForEach(0..<12) { _ in
                 RoundedRectangle(cornerRadius: 2)
                     .frame(width: 8, height: 8)
                     .foregroundColor(.white)
