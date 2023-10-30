@@ -21,7 +21,7 @@ struct ContentView: View {
                         VStack(spacing: 20) {
                             Text("SKY WALKER")
                                 .font(Font.custom("VT323-Regular", size: 40))
-                                .foregroundColor(.white)
+                                .foregroundColor(Color(hex: "FF630F"))
                                 .background(Color.black)
                             
                             Text("A journey of a thousand miles begins with a single step")
