@@ -8,27 +8,42 @@
 import SwiftUI
 
 struct PlanetsView: View {
-
-    
     let viewModel = PlanetsViewModel()
-    
+    @State var showTimer = false
     var body: some View {
-        ZStack{
-            Color.black
-                .ignoresSafeArea()
-            
-            ScrollView(.vertical) {
+        if(showTimer){
+            TimerView()
+        }else{
+            ZStack{
+                Color.black
+                    .ignoresSafeArea()
                 
-                Text("My journey")
-                    .font(Font.custom("VT323-Regular", size: 40))
-                    .foregroundColor(.white)
-                
-                VStack {
-                    ForEach(viewModel.planets) { planet in
-                        PlanetCardView(model: planet)
+                ScrollView(.vertical) {
+                    
+                    Text("My journey")
+                        .font(Font.custom("VT323-Regular", size: 40))
+                        .foregroundColor(.white)
+                    
+                    VStack {
+                        ForEach(viewModel.planets) { planet in
+                            PlanetCardView(model: planet)
+                        }
                     }
+                }.safeAreaInset(edge: .bottom, spacing: 0) {
+                    Button(action: {
+                        print("start")
+                        showTimer = true
+                    }, label: {
+                        Image(systemName: "arrow.right")
+                        Text("Start the timer")
+                    })
+                    .foregroundColor(.black)
+                    .frame(minWidth: 300, minHeight: 40)
+                    .background(
+                        RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                            .fill(Color(red: 1, green: 0.39, blue: 0.06))
+                    )
                 }
-                
             }
         }
     }
@@ -51,12 +66,14 @@ struct PlanetCardView: View {
             
    
             
-            ForEach(0..<12) { _ in
-                RoundedRectangle(cornerRadius: 2)
-                    .frame(width: 8, height: 8)
-                    .foregroundColor(.white)
-                    .padding(.top, 4)
-                
+            if(model.name != "Neptune"){
+                ForEach(0..<12) { _ in
+                    RoundedRectangle(cornerRadius: 2)
+                        .frame(width: 8, height: 8)
+                        .foregroundColor(.white)
+                        .padding(.top, 4)
+                    
+                }
             }
             
         }
@@ -68,8 +85,6 @@ struct PlanetsView_Previews: PreviewProvider {
 
     static var previews: some View {
         PlanetsView()
-               
-
     }
     
 }
