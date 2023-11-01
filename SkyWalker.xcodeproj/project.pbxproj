@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		540E6E5E2AF2C2DD00E6D7D7 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540E6E5D2AF2C2DD00E6D7D7 /* StatsView.swift */; };
 		545AB77E2AEAC8B100FD074D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545AB77D2AEAC8B100FD074D /* Color.swift */; };
 		54C789F22AF0132400E313EA /* CustomDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C789F12AF0132400E313EA /* CustomDialog.swift */; };
 		77E71CF22AE9A84600C0D166 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E71CF12AE9A84600C0D166 /* CustomVideoPlayer.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		540E6E5D2AF2C2DD00E6D7D7 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		545AB77D2AEAC8B100FD074D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		54AC9C2C2AEA948000106640 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		54C789F12AF0132400E313EA /* CustomDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialog.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				77E71CFE2AE9B2B600C0D166 /* BadgeView.swift */,
+				540E6E5D2AF2C2DD00E6D7D7 /* StatsView.swift */,
 			);
 			path = StatisticsView;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				DA1E9B8A2AE8706C003C3963 /* ContentView.swift in Sources */,
 				DA12E8942AE9BB020049624C /* TimerView.swift in Sources */,
 				DA1E9B882AE8706C003C3963 /* SkyWalkerApp.swift in Sources */,
+				540E6E5E2AF2C2DD00E6D7D7 /* StatsView.swift in Sources */,
 				77E71CF22AE9A84600C0D166 /* CustomVideoPlayer.swift in Sources */,
 				DA12E8A12AE9C99B0049624C /* PlanetsViewModel.swift in Sources */,
 				77E71CFF2AE9B2B600C0D166 /* BadgeView.swift in Sources */,

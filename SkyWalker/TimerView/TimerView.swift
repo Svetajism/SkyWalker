@@ -232,7 +232,7 @@ struct BackButton: View {
         NavigationLink(destination: PlanetsView().navigationBarBackButtonHidden(true)) {
             HStack(spacing: 8) {
                 Image(systemName: "chevron.left")
-                Text("Back")
+                Text("My Journey")
             }
             .foregroundColor(Color(hex: "FF630F"))
         }
@@ -242,11 +242,11 @@ struct BackButton: View {
 
 struct SettingsButton: View {
     var body: some View {
-        Image(systemName: "person.circle.fill")
-            .foregroundColor(Color(hex: "FF630F"))
-            .onTapGesture {
-                // Action for settings button here
-            }
+        NavigationLink(destination: StatsView().navigationBarBackButtonHidden(true)) {
+            Image(systemName: "person.circle.fill")
+                .foregroundColor(Color(hex: "FF630F"))
+                
+        }
     }
 }
 

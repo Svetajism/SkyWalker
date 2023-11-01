@@ -18,35 +18,44 @@ struct PlanetsView: View {
                 Color.black
                     .ignoresSafeArea()
                 
-                ScrollView(.vertical) {
+                VStack {
+                    HStack {
+                        Spacer()
+                        SettingsButton()
+                    }
+                    .padding(.horizontal)
+                    .padding(.top, 1)
+                    .frame(height: 10)
+                    Spacer()
                     
                     Text("My journey")
                         .font(Font.custom("VT323-Regular", size: 40))
                         .foregroundColor(.white)
-                    
-                    VStack {
-                        ForEach(viewModel.planets) { planet in
-                            PlanetCardView(model: planet)
+                    ScrollView(.vertical) {
+                        VStack {
+                            ForEach(viewModel.planets) { planet in
+                                PlanetCardView(model: planet)
+                            }
                         }
+                    }.safeAreaInset(edge: .bottom, spacing: 0) {
+                        Button(action: {
+                            print("start")
+                            showTimer = true
+                        }, label: {
+                            HStack {
+                                Image(systemName: "arrow.right")
+                                Text("Start the timer")
+                            }
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 14)
+                            .foregroundColor(.black)
+                            .frame(width: 361, alignment: .center)
+                            .background(
+                                RoundedRectangle(cornerRadius: 24)
+                                    .fill(Color(red: 1, green: 0.39, blue: 0.06))
+                            )
+                        })
                     }
-                }.safeAreaInset(edge: .bottom, spacing: 0) {
-                    Button(action: {
-                        print("start")
-                        showTimer = true
-                    }, label: {
-                        HStack {
-                            Image(systemName: "arrow.right")
-                            Text("Start the timer")
-                        }
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 14)                        
-                        .foregroundColor(.black)
-                        .frame(width: 361, alignment: .center)
-                        .background(
-                            RoundedRectangle(cornerRadius: 24)
-                                .fill(Color(red: 1, green: 0.39, blue: 0.06))
-                        )
-                    })
                 }
             }
         }
