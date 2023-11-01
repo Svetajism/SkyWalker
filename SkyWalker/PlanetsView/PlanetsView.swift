@@ -24,13 +24,14 @@ struct PlanetsView: View {
                         SettingsButton()
                     }
                     .padding(.horizontal)
-                    .padding(.top, 1)
-                    .frame(height: 10)
+                    .padding(.top, 20)
+                    .frame(height: 30)
                     Spacer()
                     
                     Text("My journey")
-                        .font(Font.custom("VT323-Regular", size: 40))
+                        .font(Font.custom("VT323-Regular", size: 34))
                         .foregroundColor(.white)
+                        .padding()
                     ScrollView(.vertical) {
                         VStack {
                             ForEach(viewModel.planets) { planet in

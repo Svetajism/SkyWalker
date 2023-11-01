@@ -40,7 +40,7 @@ struct TimerView: View {
                 
                 
                 if !showCustomDialog {
-                    if isRunning {
+                    if isRunning || isBreakTimerRunning {
                         Home().ignoresSafeArea()
                     }
                     VStack {
@@ -52,20 +52,20 @@ struct TimerView: View {
                             }
                             .padding(.horizontal)
                             .padding(.top, 20)
-                            .frame(height: 50)
+                            .frame(height: 30)
                             
                             if isBreakTime {
                                 Text("It's break time \nbuddy!")
                                     .multilineTextAlignment(.center)
                                     .font(Font.custom("VT323-Regular", size: 35))
                                     .foregroundColor(.white)
-                                    .padding(.top, 20)
+                                    .padding()
                             }
                             else {
                                 Text("Focus Timer")
-                                    .font(Font.custom("VT323-Regular", size: 40))
+                                    .font(Font.custom("VT323-Regular", size: 34))
                                     .foregroundColor(.white)
-                                    .padding(.top, 20)
+                                    .padding()
                             }
                         }
                         

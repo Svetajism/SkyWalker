@@ -21,13 +21,14 @@ struct StatsView: View {
                     Spacer()
                 }
                 .padding(.horizontal)
-                .padding(.top, 1)
-                .frame(height: 40)
+                .padding(.top, 20)
+                .frame(height: 30)
                 .background(Color.clear)
                 Spacer()
                 
                 ScrollView(.vertical) {
                     VStack(alignment: .center, spacing: 16) {
+                        Spacer()
                         HStack(alignment: .center, spacing: 16) {
                             // Focus Minutes VStack
                             VStack {
