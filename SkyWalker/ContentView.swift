@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         GeometryReader{ screen in
             NavigationView  {
-                NavigationLink(destination: PlanetsView()) {
+                NavigationLink(destination: PlanetsView().navigationBarBackButtonHidden()) {
                     ZStack {
                         
                         Home().ignoresSafeArea()

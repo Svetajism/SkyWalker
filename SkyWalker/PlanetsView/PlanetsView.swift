@@ -34,15 +34,19 @@ struct PlanetsView: View {
                         print("start")
                         showTimer = true
                     }, label: {
-                        Image(systemName: "arrow.right")
-                        Text("Start the timer")
+                        HStack {
+                            Image(systemName: "arrow.right")
+                            Text("Start the timer")
+                        }
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 14)                        
+                        .foregroundColor(.black)
+                        .frame(width: 361, alignment: .center)
+                        .background(
+                            RoundedRectangle(cornerRadius: 24)
+                                .fill(Color(red: 1, green: 0.39, blue: 0.06))
+                        )
                     })
-                    .foregroundColor(.black)
-                    .frame(minWidth: 300, minHeight: 40)
-                    .background(
-                        RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                            .fill(Color(red: 1, green: 0.39, blue: 0.06))
-                    )
                 }
             }
         }
