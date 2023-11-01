@@ -18,19 +18,20 @@ struct ContentView: View {
                         
                         Home().ignoresSafeArea()
                         
-                        VStack(spacing: 20) {
+                        VStack(spacing: 32) {
                             Text("SKY WALKER")
                                 .font(Font.custom("VT323-Regular", size: 40))
                                 .foregroundColor(Color(hex: "FF630F"))
                                 .background(Color.black)
                             
-                            Text("A journey of a thousand miles begins with a single step")
+                            Text("A journey of a thousand miles \nbegins with a single step")
                                 .foregroundColor(.white)
                                 .background(Color.black)
-                                .font(Font.custom("VT323-Regular", size: 35))
+                                .font(Font.system(size: 16))
                         }
                         .frame(width: screen.size.width)
                         .padding()
+                        .offset(y: -110)
                     }
                 }
             }
