@@ -120,7 +120,7 @@ struct AchievementCard: View {
                     .font(Font.custom("VT323-Regular", size: 24))
                     .foregroundColor(.white)
                 
-                Text("Complete your first \(model.currentProgres) minutes")
+                Text("Time left to reach this planet: \(model.maxProgress-model.currentProgres)")
                     .font(Font.system(size: 14))
                     .foregroundColor(.white)
                 Spacer()
@@ -137,7 +137,7 @@ struct AchievementCard: View {
                     
                     RoundedRectangle(cornerRadius: 12)
                         .fill(Color(hex: "FF630F"))
-                        .frame(width: CGFloat(188 / 188) * 100, height: 12)
+                        .frame(width: CGFloat(calculateBarProgress(planet: model)), height: 12)
                 }
                 .frame(width: 188, height: 12)
                 
@@ -172,6 +172,11 @@ struct MyJourneyButton: View {
     }
 }
 
+
+func calculateBarProgress(planet: PlanetModel) -> CGFloat{
+    return CGFloat((planet.currentProgres * 188)/planet.maxProgress)
+   
+}
 
 struct StatsView_Previews: PreviewProvider {
     static var previews: some View {

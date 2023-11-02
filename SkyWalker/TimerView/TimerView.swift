@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TimerView: View {
     
-    @State private var timeRemaining: Int = 25 * 1 // 25 minutes in seconds
+   @State private var timeRemaining: Int = 5 * 1 // 25 minutes in seconds
     @State private var isRunning: Bool = false
     @State private var isPaused: Bool = false // New State for paused
     @State private var isBreakTime: Bool = false
@@ -28,7 +28,7 @@ struct TimerView: View {
         NavigationView {
             ZStack {
                 Color.black.edgesIgnoringSafeArea(.all) // Black background
-                
+//                
                 // Inside the ZStack
                 if showCustomDialog {
                     CustomDialog(isActive: $showCustomDialog, title: "CONGRATULATIONS!", message: "You just spent focusing your first 25 minutes and arrived on Mercury", buttonTitle: "Got it") {

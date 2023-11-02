@@ -12,4 +12,5 @@ struct PlanetModel: Identifiable {
     let name: String
     let imageName: String
     var currentProgres: Int
+    var maxProgress: Int
 }
